@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    </head>
+
+    <body>
+    <script>
+        //creating object. Useful to group keys to a property
+       let myLaptop = {
+           brand: `Apple`, //brand,screensize and price are keys. These are seen as strings
+           screenSize:`14-inch`,
+           price:`£1m`,
+           hardware: {
+               graphicsCard: `no idea` //this is an object in an object. 
+               memory: `SSD`
+           }
+
+       }    
+
+        //seeing if object equal. 2 ways to do this. 
+        {}==={} //gives us a false. Every object is a new thing!
+        Object.is({}, {})   //gives us a false. are they the same object
+
+    
+
+       //changing an object property. This is called a mutation as it completely changes it to a new creation
+       myLatop.screenSize = `16-inch`
+
+
+       //const is unchangable however a object in an object IS changable.
+       const myLaptop = {
+           shop=PCWorld  //we can't change myLatop here but we can change the shop!
+       }
+
+        //renaming to bring back information 
+        let laptops = {
+            Laptop1: myLatop //if you now ask for Laptop1 you will get all the keys provided in the object above
+        }
+
+        //renaming to bring back information can be simplified to 
+        let brand = `Apple`
+        let name = `laptops`
+        let screenSize = `14 inch`
+        
+        let laptops = {
+            brand,
+            screensize
+        }
+
+        //DESTRUCTING. Pulling out properties and creating new variables
+        let {age, name} = chris; //this is the same at let age = chris.age and let name = chris.name
+
+    </script>
+
+    </body>
+</html>
+
